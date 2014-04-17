@@ -16,7 +16,7 @@ ul {
   list-style-position: inside; }
 
 pre, code {
-  font: 400 13px/125% Consolas, 'Lucida Console', Courier, monospace; }
+  font: 400 13px/125% consolas, 'lucida console', courier, monospace; }
 
 pre {
   padding: 10px;
