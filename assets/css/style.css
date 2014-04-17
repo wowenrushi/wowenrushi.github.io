@@ -1,0 +1,91 @@
+html { }
+
+body {
+  color: block;
+  font: 400 1em/150% 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: #1a3dc1; }
+  a:hover {
+    color: red; }
+
+ul {
+  padding-left: 10px;
+  list-style-position: inside; }
+
+pre, code {
+  font: 400 13px/125% Consolas, 'Lucida Console', Courier, monospace; }
+
+pre {
+  padding: 10px;
+  border: 1px solid #e5e5ee;
+  background-color: ghostwhite; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.nav {
+  zoom: 1; }
+  .nav:before,
+  .nav:after {
+    content: "";
+    display: table; }
+  .nav:after {
+    clear: both; }
+
+.container {
+  width: 650px;
+  padding: 0 50px; }
+
+.navbar {
+  padding: 15px 0;
+  background-color: #f8f8ff;
+  border-bottom: 1px solid #dcdcdc; }
+  .navbar-header a {
+    color: #261a3b;
+    font-weight: bold;
+    font-size: 1.35em; }
+  .navbar .nav {
+    padding-left: 0;
+    margin: 0; }
+  .navbar .nav li {
+    list-style: none;
+    float: left;
+    padding-right: 10px; }
+
+.main {
+  margin: 20px 0; }
+
+.footer {
+  color: #999;
+  font-size: .85em;
+  line-height: 125%; }
+  .footer p {
+    margin: 5px 0; }
+  .footer .about-theme {
+    font-size: .85em; }
+    .footer .about-theme a {
+      color: #999; }
+
+.summary {
+  padding: 0 10px 15px;
+  border-bottom: 1px solid #e5e5ee; }
+
+.post-header {
+  line-height: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5ee; }
+.post .post-title {
+  font-size: 1.85em;
+  margin: 8px 0; }
+.post .post-meta {
+  color: #999;
+  font-size: .85em; }

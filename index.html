@@ -1,0 +1,16 @@
+---
+layout: default
+title: 宋毓文
+---
+
+<aside class="summary">嗨,世界!我是宋毓文,金牛座,一个自恋狂,喜欢艺术,喜欢佛法,喜欢互联网,喜欢去了解那些未知的东西.最近把曾经的博客小红花儿迁移到<a href="https://pages.github.com/" target="_blank"><strong>Github Pages</strong></a>上面.<em>因为这里是免费的!</em>由<a href="http://jekyllrb.com/" target="_blank">jekyll</a>提供模板生成.近期几年的计划是把<strong>Javascript</strong>系统的学好,顺便今年争取把<cite>八十华严</cite>看掉.</aside>
+
+{% if site.posts %}
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span class="post-meta">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>没有文章.</p>
+{% endif %}
