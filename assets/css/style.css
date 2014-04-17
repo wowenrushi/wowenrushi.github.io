@@ -43,7 +43,7 @@ pre {
 
 .container {
   width: 650px;
-  padding: 0 20px; }
+  padding: 0 15px; }
 
 .navbar {
   padding: 15px 0;
@@ -80,8 +80,13 @@ pre {
       color: #999; }
 
 .summary {
-  padding: 0 10px 15px;
+  padding: 0;
   border-bottom: 1px solid #e5e5ee; }
+  .summary figure {
+    margin: 0; }
+  .summary img {
+    display: block;
+    width: 200px; }
 
 .post-header {
   line-height: 100%;
