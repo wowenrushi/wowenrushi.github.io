@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于生死轮回,以幻修幻的问题
-categories: notes
+categories: helloworld
 ---
 
 蒙如来神力加持，刚才想通了一个大问题。故想把自己的这一点心得记录下来，毕竟所学很有限，不对的地方，希望各位可以批评指正。

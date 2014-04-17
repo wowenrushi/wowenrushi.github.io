@@ -1,7 +1,7 @@
 ---
 layout: post
 title: hello world
-categories: notes
+categories: helloworld
 ---
 
 哈喽,世界! 旅行的开始.
