@@ -2,3 +2,10 @@ pygments: true
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
 github: https://github.com/1272729223/1272729223.github.io/
+navigation:
+  - text: 哈喽,世界
+    url: /helloworld/
+  - text: 佛经
+    url: /sutra/
+  - text: 笔记
+    url: /notes/

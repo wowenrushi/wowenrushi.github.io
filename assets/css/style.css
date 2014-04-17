@@ -43,7 +43,7 @@ pre {
 
 .container {
   width: 650px;
-  padding: 0 50px; }
+  padding: 0 20px; }
 
 .navbar {
   padding: 15px 0;
@@ -60,6 +60,10 @@ pre {
     list-style: none;
     float: left;
     padding-right: 10px; }
+    .navbar li.current a {
+      color: red;
+      font-weight: bold;
+      text-decoration: none; }
 
 .main {
   margin: 20px 0; }
