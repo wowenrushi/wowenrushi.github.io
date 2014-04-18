@@ -21,7 +21,10 @@ pre, code {
 pre {
   padding: 10px;
   border: 1px solid #e5e5ee;
-  background-color: ghostwhite; }
+  background-color: ghostwhite;
+  word-wrap: normal;
+  white-space: pre;
+  overflow-x: auto; }
 
 .clearfix {
   zoom: 1; }
