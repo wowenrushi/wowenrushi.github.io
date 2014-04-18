@@ -435,13 +435,19 @@ instance.__proto__   // => obj => Object {language: 'javascript', isFun: true}
 {% highlight javascript linenos %}
 function __extend(child, parent) {
 
-  // 把parent的原型对象保存在_proto变量中
-  var _proto = parent.prototype
+  function init(obj) {
+    function Base() {}
+    Base.prototype = obj
+    return new Base
+  }
+
+  // 把复制parent的原型对象保存在proto变量中
+  var proto = init(parent.prototype)
 
   // 设置parent原型对象副本的constructor为child
-  _proto.constructor = child
+  proto.constructor = child
 
   // 把child的原型设置为变量proto中的原型
-  child.prototype = _proto
+  child.prototype = proto
 }
 {% endhighlight %}
