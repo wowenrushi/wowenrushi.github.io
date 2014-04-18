@@ -5,7 +5,7 @@ categories: notes
 ---
 
 面向对象语言都有类的概念,通过类可以创建任意多个具有相同属性和方法的对象.
-但在Javascript中没有类的概念,是通过prototype原型模式来实现类的.
+但在Javascript中是通过prototype原型模式来模拟类的继承.
 
 #### 1).工厂模式
 
