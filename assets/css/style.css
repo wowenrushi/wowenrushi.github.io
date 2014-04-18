@@ -17,6 +17,8 @@ ul {
 
 pre, code {
   font: 400 13px/125% consolas, 'lucida console', courier, monospace; }
+  pre .lineno {
+    color: #c3c3cd; }
 
 pre {
   padding: 10px;

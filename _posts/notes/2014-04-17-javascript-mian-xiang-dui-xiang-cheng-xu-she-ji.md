@@ -433,15 +433,10 @@ instance.__proto__   // => obj => Object {language: 'javascript', isFun: true}
 
 #### 9).寄生组合式继承
 {% highlight javascript linenos %}
-function __extend(child, parent) {
+function extend(child, parent) {
 
   // 把复制parent的原型对象保存在proto变量中
-  var _parentProto = parent.prototype,
-      proto = function(_parentProto) {
-        function Base() {}
-        Base.prototype = _parentProto
-        return new Base
-      }
+  var proto = object(parent.prototype)
 
   // 设置parent原型对象副本的constructor为child
   proto.constructor = child
@@ -449,4 +444,45 @@ function __extend(child, parent) {
   // 把child的原型设置为变量proto中的原型
   child.prototype = proto
 }
+
+function object(obj) {
+  function Base() {}
+  Base.prototype = obj
+  return new Base
+}
+
+
+//
+// 更加优雅的实现,coffeescript的实现
+//
+var Base, Sub,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) {
+        for (var key in parent) {
+
+          //
+          if (__hasProp.call(parent, key)) child[key] = parent[key]
+        }
+        function ctor() { this.constructor = child }
+        ctor.prototype = parent.prototype
+        child.prototype = new ctor()
+        child.__super__ = parent.prototype
+        return child
+    }
+
+Base = (function() {
+  function Base() {}
+
+  return Base
+})()
+
+Sub = (function(_super) {
+  __extends(Sub, _super)
+
+  function Sub() {
+    return Sub.__super__.constructor.apply(this, arguments)
+  }
+
+  return Sub
+})(Base)
 {% endhighlight %}
