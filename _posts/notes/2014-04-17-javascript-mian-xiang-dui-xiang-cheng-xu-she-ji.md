@@ -232,7 +232,7 @@ function Book(title, author) {
 // 实际例子: 创建一个特殊的数组构造函数
 //
 function SpecialArray() {
-  
+
   // 先创建一个原生的数组
   var arr = new Array
 
@@ -397,7 +397,10 @@ Super.prototype          // => Super {constructor:Super,printName:function,__pro
 {% endhighlight %}
 
 #### 8).原型式继承
+
 {% highlight javascript linenos %}
+'use strict';
+
 // 定义init函数
 function init(obj) {
 
@@ -433,6 +436,8 @@ instance.__proto__   // => obj => Object {language: 'javascript', isFun: true}
 
 #### 9).寄生组合式继承
 {% highlight javascript linenos %}
+'use strict';
+
 function extend(child, parent) {
 
   // 把复制parent的原型对象保存在proto变量中
@@ -453,36 +458,65 @@ function object(obj) {
 
 
 //
-// 更加优雅的实现,coffeescript的实现
+// 更加优雅的实现
+// coffeescript中模拟类继承的实现
 //
 var Base, Sub,
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) {
         for (var key in parent) {
 
-          //
+          // 把parent类中自定义的属性和方法复制到child类中
+          // 这里的自定义属性和方法指通过parent构造函数内定义的属性和parent.prototype定义的方法
+          // `child['property'] = parent['property']`
+          // `child['method']   = parent['method']`
           if (__hasProp.call(parent, key)) child[key] = parent[key]
         }
+
+        // 仔细阅读以下注释:
+        // 通过原型式继承的设计模式创建一个ctor()构造函数
+        // 把(new actor)实例的constructor属性指定为child类构造函数
         function ctor() { this.constructor = child }
+
+        // 把ctor构造函数的prototype指定为parent类的原型对象
         ctor.prototype = parent.prototype
+
+        // 把child类的prototype指定为(new ctor)的实例
+        // 注意: 在这里,child类的prototype的contructor就被指定为child类本身了.
         child.prototype = new ctor()
+
+        // 定义child类的__super__属性为parent类的原型
         child.__super__ = parent.prototype
+
+        // 继承parent类之后再返回child类
         return child
     }
 
+// 定义Base类
 Base = (function() {
+  // 创建Base类的构造函数
   function Base() {}
 
+  // 返回Base类
   return Base
 })()
 
+// 定义Sub类函数,传入Base类
 Sub = (function(_super) {
+
+  // 调用__extends()方法从传入的Base类中继承属性和方法
   __extends(Sub, _super)
 
+  // 创建Sub类的构造函数
   function Sub() {
+
+    // 返回Sub类
+    // 通过Sub类的__super__的属性找到Base类的构造函数
+    // 在创建Sub类实例的时候,调用Base类的构造函数
     return Sub.__super__.constructor.apply(this, arguments)
   }
 
+  // 返回Sub类
   return Sub
 })(Base)
 {% endhighlight %}
