@@ -9,8 +9,3 @@ navigation:
     url: /sutra/
   - text: 笔记
     url: /notes/
-analytics:
-  provider: google
-  google:
-    tracking_id: 'UA-50351277-1'
-safe: true
