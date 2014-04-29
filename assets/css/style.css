@@ -1,8 +1,9 @@
-html { }
+html {
+  font-size: 1em; }
 
 body {
-  color: block;
-  font: 400 1em/150% 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, 'Microsoft Yahei', serif;
+  color: black;
+  font: 400 .9em/150% 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, 'Microsoft Yahei', serif;
   padding: 0;
   margin: 0; }
 
@@ -15,8 +16,11 @@ ul {
   padding-left: 10px;
   list-style-position: inside; }
 
+p {
+  margin: 10px 0; }
+
 pre, code {
-  font: 400 13px/125% consolas, 'lucida console', courier, monospace; }
+  font: 400 11px/125% consolas, 'lucida console', courier, monospace; }
   pre .lineno {
     color: #c3c3cd; }
 
@@ -48,7 +52,7 @@ pre {
 
 .container {
   width: 650px;
-  padding: 0 50px; }
+  padding: 0 20px; }
 
 .navbar {
   padding: 15px 0;
@@ -105,3 +109,10 @@ pre {
 .post .post-meta {
   color: #999;
   font-size: .85em; }
+
+/*
+.post * {
+  direction: ltr;
+  unicode-bidi: bidi-override; }
+*/
+
