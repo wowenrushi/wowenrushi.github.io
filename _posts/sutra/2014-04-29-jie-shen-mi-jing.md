@@ -2,6 +2,7 @@
 layout: post
 title: 《解深密经》
 categories: sutra
+description:  大乘佛法,《解深密经》
 ---
 
 大唐 三藏法师玄奘奉诏译
