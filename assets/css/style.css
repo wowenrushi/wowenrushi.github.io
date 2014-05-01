@@ -24,6 +24,10 @@ ul {
 p {
   margin: 10px 0; }
 
+blockquote {
+  margin-left: 15px;
+  margin-right: 0; }
+
 pre, code {
   font: 400 11px/125% consolas, 'lucida console', courier, monospace; }
   pre .lineno {
@@ -56,7 +60,7 @@ pre {
     clear: both; }
 
 .container {
-  width: 650px;
+  max-width: 650px;
   padding: 0 20px; }
 
 .navbar {
