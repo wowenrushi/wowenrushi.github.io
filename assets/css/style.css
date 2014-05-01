@@ -64,7 +64,7 @@ pre {
   background-color: #f8f8ff;
   border-bottom: 1px solid #dcdcdc; }
   .navbar-header a {
-    color: #261a3b;
+    color: red;
     font-weight: bold;
     font-size: 1.35em; }
   .navbar .nav {
