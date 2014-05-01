@@ -1,11 +1,16 @@
 html {
-  font-size: 1em; }
+  font-size: 1em;
+  height: 100%; }
 
 body {
   color: black;
   font: 400 .9em/150% 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, 'Microsoft Yahei', serif;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  min-height: 100%;
+  background: transparent url(/assets/img/buddhist.gif) right bottom fixed no-repeat;
+  background-size: 150px;
+  position: relative; }
 
 a {
   color: #1a3dc1; }
@@ -13,7 +18,7 @@ a {
     color: red; }
 
 ul {
-  padding-left: 10px;
+  padding-left: 0;
   list-style-position: inside; }
 
 p {

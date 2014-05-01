@@ -2,9 +2,14 @@
 <html lang='zh-CN'>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ page.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }} / 宋毓文">
+    {% else %}
+      <meta name="description" content="大乘佛法-佛经-笔记 / 宋毓文">
+    {% endif %}
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <!--[if lt IE 9><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
@@ -36,7 +41,6 @@
     <footer class="footer" role='content-info'>
       <div class="container">
         <p><small>(&copy;) 2014.</small>宋毓文</p>
-        <aside class="about-theme">Theme was stolen from <a href="http://arcturo.github.io/library/coffeescript/index.html" target="_blank">The little book about coffeescript</a></aside>
       </div>
     </footer>
     {% include ga.html %}
