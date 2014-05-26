@@ -9,11 +9,11 @@ title: 宋毓文
 </aside>
 
 {% if site.posts %}
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<ul class="posts">
+  {% for post in site.posts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 {% else %}
-  <p>没有文章.</p>
+<p>没有文章.</p>
 {% endif %}

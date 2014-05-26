@@ -6,9 +6,9 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if page.description %}
-      <meta name="description" content="{{ page.description }} / 宋毓文">
+    <meta name="description" content="{{ page.description }} / 宋毓文">
     {% else %}
-      <meta name="description" content="大乘佛法-佛经-笔记 / 宋毓文">
+    <meta name="description" content="大乘佛法-佛经-笔记 / 宋毓文">
     {% endif %}
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -23,21 +23,19 @@
         </div>
         <ul class="nav" role='menu'>
           {% for link in site.navigation %}
-            {% assign current = nil %}
-            {% if page.url contains link.url %}
-              {% assign current = 'current' %}
-            {% endif %}
-            <li{% if page.url contains link.url %} class="{{ current }}"{% endif %}>
-              <a href="{{ link.url }}">{{ link.text }}</a>
-            </li>
+          {% assign current = nil %}
+          {% if page.url contains link.url %}
+          {% assign current = 'current' %}
+          {% endif %}
+          <li{% if page.url contains link.url %} class="{{ current }}"{% endif %}>
+            <a href="{{ link.url }}">{{ link.text }}</a>
+          </li>
           {% endfor %}
         </ul>
       </div>
     </nav>
     <main class="main" role='main'>
-      <div class="container">
-        {{ content }}
-      </div>
+      <div class="container">{{ content }}</div>
     </main>
     <footer class="footer" role='content-info'>
       <div class="container">
@@ -47,3 +45,4 @@
     {% include ga.html %}
   </body>
 </html>
+

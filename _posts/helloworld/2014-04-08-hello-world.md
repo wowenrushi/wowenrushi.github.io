@@ -8,8 +8,10 @@ categories: helloworld
 
 {% highlight javascript linenos %}
 function hi() {
-  'use strict';
-  alert('hello, world!')
+    'use strict';
+    alert('hello, world!')
 }
 {% endhighlight %}
 
+<button type="button">Click Me</button>
+<script>document.getElementsByTagName('button')[0].onclick = function() { alert('hello, world!') }</script>
