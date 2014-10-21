@@ -106,7 +106,13 @@ pre {
 .subtitle { margin-bottom: 10px; }
 
 .posts { margin-bottom: 30px; }
-    .posts a { white-space: nowrap; }
+    .posts span a { white-space: nowrap; }
+    .posts span sup {
+        color: red;
+        font-size: 10px;
+        position: relative;
+        left: -5px;
+    }
 
 .post-header {
   line-height: 100%;
