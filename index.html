@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 宋毓文
+title: 我闻如是
 ---
 
 <aside class="summary">
@@ -9,7 +9,7 @@ title: 宋毓文
 
 {% if site.posts %}
     {% if site.categories.rudao %}
-        <h2>儒道</h2>
+        <h2 class="subtitle">儒道</h2>
         <div class="posts">
           {% for post in site.categories.rudao %}
               <a href="{{ post.url }}">{{ post.title }}</a>
@@ -17,7 +17,7 @@ title: 宋毓文
         </div>
     {% endif %}
     {% if site.categories.xiaochengjing %}
-        <h2>小乘经</h2>
+        <h2 class="subtitle">小乘经</h2>
         <div class="posts">
           {% for post in site.categories.xiaochengjing %}
               <a href="{{ post.url }}">{{ post.title }}</a>
@@ -25,7 +25,7 @@ title: 宋毓文
         </div>
     {% endif %}
     {% if site.categories.dachengjing %}
-        <h2>大乘经</h2>
+        <h2 class="subtitle">大乘经</h2>
         <div class="posts">
           {% for post in site.categories.dachengjing %}
               <a href="{{ post.url }}">{{ post.title }}</a>
@@ -33,7 +33,7 @@ title: 宋毓文
         </div>
     {% endif %}
     {% if site.categories.wulixue %}
-        <h2>现代物理学</h2>
+        <h2 class="subtitle">现代物理学</h2>
         <div class="posts">
           {% for post in site.categories.wulixue %}
               <a href="{{ post.url }}">{{ post.title }}</a>
