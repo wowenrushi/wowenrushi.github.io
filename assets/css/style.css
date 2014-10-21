@@ -103,7 +103,7 @@ pre {
   padding: 0;
   border-bottom: 1px solid #e5e5ee; }
 
-.posts { margin: 20px 0; }
+.posts { margin-bottom: 20px; }
     .posts a { white-space: nowrap; }
 
 .post-header {
