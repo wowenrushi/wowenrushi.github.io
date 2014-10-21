@@ -1,0 +1,15 @@
+---
+layout: default
+title: 大乘经
+permalink: /dachengjing/
+---
+
+{% if site.categories.dachengjing %}
+<div class="posts">
+  {% for post in site.categories.dachengjing %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endfor %}
+</div>
+{% else %}
+<p>没有文章.</p>
+{% endif %}

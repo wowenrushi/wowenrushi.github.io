@@ -1,11 +1,13 @@
 pygments: true
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
-github: https://github.com/1272729223/1272729223.github.io/
+github: https://github.com/songyuwen/songyuwen.github.io/
 navigation:
-  - text: 哈喽,世界
-    url: /helloworld/
-  - text: 佛经
-    url: /sutra/
-  - text: 笔记
-    url: /notes/
+  - text: 儒道
+    url: /rudao/
+  - text: 小乘经
+    url: /xiaochengjing/
+  - text: 大乘经
+    url: /dachengjing/
+  - text: 现代物理学
+    url: /wulixue/
