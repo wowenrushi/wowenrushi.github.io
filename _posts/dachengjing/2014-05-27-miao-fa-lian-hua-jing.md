@@ -2,7 +2,6 @@
 layout: post
 title: 《妙法莲华经》
 categories: dachengjing
-status: true
 description: 《妙法莲华经》
 ---
 
