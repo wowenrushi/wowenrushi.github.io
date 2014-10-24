@@ -2,7 +2,6 @@
 layout: post
 title: 《一切都是注定的吗》
 categories: wulixue
-status: true
 description: 《一切都是注定的吗》
 ---
 
