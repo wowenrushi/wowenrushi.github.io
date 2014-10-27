@@ -133,6 +133,6 @@ pre {
 @media (max-width: 600px) {
     .navbar .nav li { float: none; }
     .navbar .nav li a { display: block; }
-    .hero span { display: block; line-height: 160%; }
+    .hero span { display: block; font-size: .9em; line-height: 160%; }
     .posts span { display: block; }
 }
