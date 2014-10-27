@@ -3,43 +3,57 @@ layout: default
 title: 我闻如是
 ---
 
-<aside class="summary">
-    <h1>一切有为法。如梦幻泡影。如露亦如电。应作如是观</h1>
+<aside class="hero">
+    <h1><span>一切有为法。如梦幻泡影。</span><span>如露亦如电。应作如是观</span></h1>
 </aside>
 
 {% if site.posts %}
     {% if site.categories.rudao %}
-        <h2 class="subtitle">儒道</h2>
-        <div class="posts">
-          {% for post in site.categories.rudao %}
-              <a href="{{ post.url }}">{{ post.title }}</a>
-          {% endfor %}
+        <div class="section">
+            <h2 class="title">儒道</h2>
+            <div class="posts">
+              {% for post in site.categories.rudao %}
+                  <span>
+                      <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
+                  </span>
+              {% endfor %}
+            </div>
         </div>
     {% endif %}
     {% if site.categories.xiaochengjing %}
-        <h2 class="subtitle">小乘经</h2>
-        <div class="posts">
-          {% for post in site.categories.xiaochengjing %}
-              <a href="{{ post.url }}">{{ post.title }}</a>
-          {% endfor %}
+        <div class="section">
+            <h2 class="title">小乘经</h2>
+            <div class="posts">
+              {% for post in site.categories.xiaochengjing %}
+                  <span>
+                      <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
+                  </span>
+              {% endfor %}
+            </div>
         </div>
     {% endif %}
     {% if site.categories.dachengjing %}
-        <h2 class="subtitle">大乘经</h2>
-        <div class="posts">
-          {% for post in site.categories.dachengjing %}
-          <span>
-              <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
-          </span>
-          {% endfor %}
+        <div class="section">
+            <h2 class="title">大乘经</h2>
+            <div class="posts">
+              {% for post in site.categories.dachengjing %}
+              <span>
+                  <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
+              </span>
+              {% endfor %}
+            </div>
         </div>
     {% endif %}
     {% if site.categories.wulixue %}
-        <h2 class="subtitle">现代物理学</h2>
-        <div class="posts">
-          {% for post in site.categories.wulixue %}
-              <a href="{{ post.url }}">{{ post.title }}</a>
-          {% endfor %}
+        <div class="section">
+            <h2 class="title">现代物理学</h2>
+            <div class="posts">
+              {% for post in site.categories.wulixue %}
+                  <span>
+                      <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
+                  </span>
+              {% endfor %}
+            </div>
         </div>
     {% endif %}
 {% else %}

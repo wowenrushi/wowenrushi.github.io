@@ -99,13 +99,12 @@ pre {
     .footer .about-theme a {
       color: #999; }
 
-.summary {
+.hero {
   padding: 0;
   border-bottom: 1px solid #e5e5ee; }
 
-.subtitle { margin-bottom: 10px; }
-
-.posts { margin-bottom: 30px; }
+.section { margin-bottom: 30px; }
+    .section .title { margin-bottom: 10px; }
     .posts span a { white-space: nowrap; }
     .posts span sup {
         color: red;
@@ -131,3 +130,9 @@ pre {
   unicode-bidi: bidi-override; }
 */
 
+@media (max-width: 600px) {
+    .navbar .nav li { float: none; }
+    .navbar .nav li a { display: block; }
+    .hero span { display: block; line-height: 160%; }
+    .posts span { display: block; }
+}
