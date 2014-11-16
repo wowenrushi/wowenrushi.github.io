@@ -93,11 +93,8 @@ pre {
   font-size: .85em;
   line-height: 125%; }
   .footer p {
+    font-size: 11px;
     margin: 5px 0; }
-  .footer .about-theme {
-    font-size: .85em; }
-    .footer .about-theme a {
-      color: #999; }
 
 .hero {
   padding: 0;
@@ -123,6 +120,16 @@ pre {
 .post .post-meta {
   color: #999;
   font-size: .85em; }
+
+.books { width: 100%; }
+    .books td {
+        text-align: center;
+        vertical-align: top; }
+        .books img {
+            width: 60%; }
+        .books p {
+            font-size: 12px;
+            margin: 5px 0; }
 
 /*
 .post * {
