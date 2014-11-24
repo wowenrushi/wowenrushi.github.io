@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="/assets/css/syntax.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/img/buddhist.ico">
-    <!--[if lt IE 9><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <nav class="navbar" role='navigation'>
+    <div class="navbar" role='navigation'>
       <div class="container">
         <div class="navbar-header">
           <a href="/" role='logo'>我闻如是</a>
@@ -34,15 +33,15 @@
           {% endfor %}
         </ul>
       </div>
-    </nav>
-    <main class="main" role='main'>
+    </div>
+    <div class="main" role='main'>
       <div class="container">{{ content }}</div>
-    </main>
-    <footer class="footer" role='content-info'>
+    </div>
+    <div class="footer" role='content-info'>
       <div class="container">
           <p><span>&lt;免费转载,复制&gt; </span><br>志愿者: 宋毓文<span>yuwen.s512@gmail.com</span> / 李琼菁<span>talkname@163.com</span></p>
       </div>
-    </footer>
+    </div>
     {% include ga.html %}
   </body>
 </html>
