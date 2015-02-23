@@ -1,10 +1,8 @@
-pygments: true
+highlighter: true
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
 github: https://github.com/songyuwen/songyuwen.github.io/
 navigation:
-  - text: 儒道
-    url: /rudao/
   - text: 小乘经
     url: /xiaochengjing/
   - text: 大乘经
@@ -13,3 +11,5 @@ navigation:
     url: /wulixue/
   - text: 免费书籍
     url: /mianfeishuji/
+  - text: 评论
+    url: /comments/
