@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《佛说净业障经》
-categories: dachengjing
-description: 《佛说净业障经》
 ---
 
 失译人名今附秦录

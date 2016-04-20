@@ -3,47 +3,27 @@ layout: default
 title: 我闻如是
 ---
 
-<div class="hero">
-    <h1>过去心不可得。现在心不可得。未来心不可得</h1>
-</div>
 
-{% if site.posts %}
-    {% if site.categories.xiaochengjing %}
-        <div class="section">
-            <h2 class="title">小乘经</h2>
-            <div class="posts">
-              {% for post in site.categories.xiaochengjing %}
-                  <span>
-                      <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
-                  </span>
-              {% endfor %}
-            </div>
-        </div>
-    {% endif %}
-    {% if site.categories.dachengjing %}
-        <div class="section">
-            <h2 class="title">大乘经</h2>
-            <div class="posts">
-              {% for post in site.categories.dachengjing %}
-              <span>
-                  <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
-              </span>
-              {% endfor %}
-            </div>
-        </div>
-    {% endif %}
-    {% if site.categories.wulixue %}
-        <div class="section">
-            <h2 class="title">现代物理学</h2>
-            <div class="posts">
-              {% for post in site.categories.wulixue %}
-                  <span>
-                      <a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
-                  </span>
-              {% endfor %}
-            </div>
-        </div>
-    {% endif %}
-{% else %}
-<p>没有文章.</p>
-{% endif %}
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><h2>若以色见我，以音声求我，是人行邪道，不得见如来。</h2></td>
+	</tr>
+	<tr>
+		<td align="center">
+			<table>
+				<tr>
+					{% for post in site.posts %}
+					<td>
+						<a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
+					</td>
+					{% endfor %}
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<h3><a href="http://list.youku.com/albumlist/show?id=19517002&ascending=1&page=1" target="_blank">三乘菩提之学佛释疑（共130集）</a></h3>
+		</td>
+	</tr>
+</table>

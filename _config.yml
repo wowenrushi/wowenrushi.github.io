@@ -1,13 +1,4 @@
 highlighter: true
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title/
-github: https://github.com/songyuwen/songyuwen.github.io/
-navigation:
-  - text: 小乘经
-    url: /xiaochengjing/
-  - text: 大乘经
-    url: /dachengjing/
-  - text: 现代物理学
-    url: /wulixue/
-  - text: 评论
-    url: /comments/
+github: https://github.com/wowenrushi/wowenrushi.github.io/

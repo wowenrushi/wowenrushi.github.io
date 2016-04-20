@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《入法界体性经》
-categories: dachengjing
-description: 《入法界体性经》
 ---
 
 隋北 天竺 三藏法师阇那崛多译

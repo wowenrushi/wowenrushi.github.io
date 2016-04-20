@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《妙法莲华经》
-categories: dachengjing
-description: 《妙法莲华经》
 ---
 
 姚秦 三藏法师鸠摩罗什奉诏译

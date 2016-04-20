@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《圆觉经》
-categories: dachengjing
-description: 《圆觉经》,《大方广圆觉修多罗了义经》,《大方广圆觉经》,《圆觉修多罗了义经》,《圆觉了义经》
 ---
 
 唐 罽宾沙门佛陀多罗译

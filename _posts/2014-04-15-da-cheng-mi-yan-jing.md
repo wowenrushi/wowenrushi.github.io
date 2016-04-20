@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《大乘密严经》
-categories: dachengjing
-description: 《大乘密严经》
 ---
 
 唐 中天竺国沙门地婆诃罗译

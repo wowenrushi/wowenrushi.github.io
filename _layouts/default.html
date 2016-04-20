@@ -1,43 +1,28 @@
 <!doctype html>
-<html lang='zh-CN'>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-    maximum-scale=1.0, user-scalable=no">
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }} • 我闻如是">
-    {% else %}
-    <meta name="description" content="我闻如是, 大乘佛教, 小乘佛教, 现代物理学">
-    {% endif %}
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="shortcut icon" href="/assets/img/buddhist.ico">
+	<style type="text/css">
+	a, a:hover, a:visited { color: blue; }
+	</style>
   </head>
-  <body>
-    <div class="navbar" role='navigation'>
-      <div class="container">
-        <div class="navbar-header">
-          <a href="/" role='logo'>我闻如是</a>
-        </div>
-        <ul class="nav" role='menu'>
-          {% for link in site.navigation %}
-          {% assign current = nil %}
-          {% if page.url contains link.url %}
-          {% assign current = 'current' %}
-          {% endif %}
-          <li{% if page.url contains link.url %} class="{{ current }}"{% endif %}>
-            <a href="{{ link.url }}">{{ link.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="main" role='main'>
-      <div class="container">{{ content }}</div>
-    </div>
-    {% include ga.html %}
+  <body>	  
+	  <table border="10" width="100%" style="border-color: orange;">
+		  <caption><h1><a href="/">我闻如是</a></h1></caption>
+		  <tr>
+			  <td>{{content}}</td>
+		  </tr>
+		  <tr>
+			  <td align="center" valign="middle">
+				  <h3 style="color: red;">本师释迦牟尼像</h3>
+				  <img src="/assets/img/buddha1.jpg" alt="释迦牟尼" style="max-width: 100%;">
+			  </td>
+		  </tr>
+		  <tr>
+			  <td align="center">贡献请联系: <a href="mailto:jodo4x@gmail.com?subject=阿弥陀佛">jodo4x@gmail.com</a> <code>T:183-0217-9417</code></td>
+		  </tr>
+	  </table>
   </body>
 </html>
 

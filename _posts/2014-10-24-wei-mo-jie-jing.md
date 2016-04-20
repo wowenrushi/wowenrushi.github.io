@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《维摩诘经》
-categories: dachengjing
-description: 《维摩诘经》
 ---
 
 姚秦 三藏鸠摩罗什译

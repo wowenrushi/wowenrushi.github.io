@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 《金刚经》
-categories: dachengjing
-description: 《金刚经》
 ---
 
 姚秦 三藏法师鸠摩罗什译
