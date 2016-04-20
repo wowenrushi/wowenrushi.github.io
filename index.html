@@ -11,13 +11,11 @@ title: 我闻如是
 	<tr>
 		<td align="center">
 			<table>
-				<tr>
 					{% for post in site.posts %}
-					<td>
+					<tr><td>
 						<a href="{{ post.url }}">{{ post.title }}</a>{% if post.status %}<sup>整理中</sup>{% endif %}
-					</td>
+					</td></tr>
 					{% endfor %}
-				</tr>
 			</table>
 		</td>
 	</tr>
