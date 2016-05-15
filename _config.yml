@@ -1,4 +1,5 @@
 markdown: kramdown
+# permalink: /posts/:year/:month/:day/:title/
 permalink: /posts/:year/:month/:day/:title/
 github: https://github.com/wowenrushi/wowenrushi.github.io/
 gems:
